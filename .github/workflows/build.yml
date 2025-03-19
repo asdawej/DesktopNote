@@ -22,6 +22,7 @@ jobs:
 
     - name: Build package
       run: |
+        pyinstaller DesktopNote-cli.spec
         pyinstaller DesktopNote.spec
 
     - name: Upload build artifact
